@@ -9,16 +9,27 @@
 </head>
 <body>
     <div class="game-container">
-        <canvas id="game"></canvas>
+        <div class="canvasContainer">
+            <div class="FDJ inactive">
+                <div class="textContainer">
+                    <p id="FinDelJuego"></p>
+                    <button id="jugarDeNuevo">Jugar de nuevo</button>
+                </div>
+            </div>
+            <canvas id="game"></canvas>
+        </div>
 
         <div class="buttons-container">
             <button id="up">⇧</button>
             <button id="left">⇦</button>
             <button id="right">⇨</button>
             <button id="down">⇩</button>
+            <button id="Re-start">↺</button>
         </div>
         <div class="messages">
-            <p>Párrafo</p>
+            <p>Vidas: <span id="lives"></span></p>
+            <p>Tiempo record: <span id="tiempoRecord"></span></p>
+            <p>Tiempo: <span id="time"></span></p>
         </div>
     </div>
 
